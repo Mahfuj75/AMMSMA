@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSecondaryLoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Program Name"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight=".1"
+                    android:fontFamily="serif"
+                    android:gravity="start"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewProgramNameOthers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight=".8"
+                    android:fontFamily="serif"
+                    android:gravity="start"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#3c37374f" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Balance"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight=".1"
+                    android:fontFamily="serif"
+                    android:gravity="start"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewBalance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight=".8"
+                    android:fontFamily="serif"
+                    android:gravity="start"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#3c37374f" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Minimum Deposit"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight=".1"
+                    android:fontFamily="serif"
+                    android:gravity="start"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMinimumDeposit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight=".8"
+                    android:fontFamily="serif"
+                    android:gravity="start"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#3c37374f" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Saving Opening date"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight=".1"
+                    android:fontFamily="serif"
+                    android:gravity="start"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSavingOpeningDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight=".8"
+                    android:fontFamily="serif"
+                    android:gravity="start"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutServiceCharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#3c37374f" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="serif"
+                        android:lines="1"
+                        android:text="Service Charge Interest (approx.)"
+                        android:textColor="@color/colorSimpleBlack"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".1"
+                        android:fontFamily="serif"
+                        android:gravity="start"
+                        android:text=":"
+                        android:textColor="@color/colorSimpleBlack"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewServiceChargeInterest"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".8"
+                        android:fontFamily="serif"
+                        android:gravity="start"
+                        android:textColor="@color/colorSimpleBlack"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayoutForLts"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#3c37374f"
+                    android:layout_height="1px"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="Missing LTS Count"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorSimpleBlack"
+                        android:fontFamily="serif"
+                        android:textSize="13sp"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:fontFamily="serif"
+                        android:textColor="@color/colorSimpleBlack"
+                        android:textSize="13sp"
+                        android:layout_width="0dp"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"/>
+                    <TextView
+                        android:id="@+id/textViewMissingLtsCount"
+                        android:fontFamily="serif"
+                        android:textColor="@color/colorSimpleBlack"
+                        android:textSize="13sp"
+                        android:layout_width="0dp"
+                        android:layout_gravity="start"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".8"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayoutPrimaryLoan"
+            android:visibility="visible"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Program Name"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:id="@+id/textViewProgramNamePrimary"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:layout_gravity="start"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:background="#3c37374f"
+                android:layout_height="1px"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Disburse Date"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:lines="1"
+                    android:fontFamily="serif"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:id="@+id/textViewDisburseDate"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:layout_gravity="start"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:background="#3c37374f"
+                android:layout_height="1px"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Disburse Amount With SC"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:lines="1"
+                    android:fontFamily="serif"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:id="@+id/textViewDisburseWithScAmount"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:layout_gravity="start"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:background="#3c37374f"
+                android:layout_height="1px"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Disbursed Principal"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:lines="1"
+                    android:fontFamily="serif"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:id="@+id/textViewDisbursePrincipal"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:layout_gravity="start"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:background="#3c37374f"
+                android:layout_height="1px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Outstanding Amount"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:id="@+id/textViewOutstandingAmount"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:layout_gravity="start"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:background="#3c37374f"
+                android:layout_height="1px"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Overdue Amount"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:id="@+id/textViewOverdueAmount"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:background="#3c37374f"
+                android:layout_height="1px"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Advance Amount"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:id="@+id/textViewAdvanceAmount"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:background="#3c37374f"
+                android:layout_height="1px"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Installment Amount"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:lines="1"
+                    android:fontFamily="serif"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:id="@+id/textViewInstallmentAmount"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:layout_gravity="start"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:background="#3c37374f"
+                android:layout_height="1px"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Installment Number Remains"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"/>
+                <TextView
+                    android:layout_gravity="start"
+                    android:id="@+id/textViewRemainingInstallmentNumber"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:background="#3c37374f"
+                android:layout_height="1px"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Loan Cycle"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:gravity="start"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"/>
+                <TextView
+                    android:id="@+id/textViewLoanCycle"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayoutForShortTermLoan"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#3c37374f"
+                    android:layout_height="1px"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="Schedule Date"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorSimpleBlack"
+                        android:fontFamily="serif"
+                        android:textSize="13sp"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:fontFamily="serif"
+                        android:textColor="@color/colorSimpleBlack"
+                        android:textSize="13sp"
+                        android:layout_width="0dp"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"/>
+                    <TextView
+                        android:id="@+id/textViewShortTermLoan"
+                        android:fontFamily="serif"
+                        android:textColor="@color/colorSimpleBlack"
+                        android:textSize="13sp"
+                        android:layout_width="0dp"
+                        android:layout_gravity="start"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".8"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

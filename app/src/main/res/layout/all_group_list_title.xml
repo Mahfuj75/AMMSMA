@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutAllGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp">
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBlueGray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:background="#B3E5FC"
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:lines="2"
+                android:text="Group Name"
+                android:textColor="@color/colorSimpleBlack"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBlueGray" />
+
+        <asa.org.bd.ammsma.customListView.CustomNonScrollerListView
+            android:id="@+id/listViewGroupNameRealized"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </asa.org.bd.ammsma.customListView.CustomNonScrollerListView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBlueGray" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBlueGray" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="#B3E5FC"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="Loan Collection"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlueGray" />
+
+                <TextView
+                    android:background="#B3E5FC"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="Savings Deposit"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlueGray" />
+
+                <TextView
+                    android:background="#B3E5FC"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="Savings Withdrawal"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlueGray" />
+
+                <TextView
+                    android:background="#B3E5FC"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="CBS Deposit"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlueGray" />
+
+                <TextView
+                    android:background="#B3E5FC"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="CBS Withdrawal"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlueGray" />
+
+                <TextView
+                    android:background="#B3E5FC"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="LTS Deposit"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlueGray" />
+
+                <TextView
+                    android:background="#B3E5FC"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="BadDebt Collection"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlueGray" />
+
+                <TextView
+                    android:background="#B3E5FC"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="Exemption Amount"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlueGray" />
+
+                <TextView
+                    android:background="#B3E5FC"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="Net Collection"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlueGray" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBlueGray" />
+
+            <asa.org.bd.ammsma.customListView.CustomNonScrollerListView
+                android:id="@+id/listViewGroupOtherInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </asa.org.bd.ammsma.customListView.CustomNonScrollerListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBlueGray" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

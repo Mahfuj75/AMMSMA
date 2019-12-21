@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/textViewTitle"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:fontFamily="serif"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="#1B5E20"/>
+
+
+    <!--<ImageView
+        android:layout_marginTop="10dp"
+        android:src="@drawable/line"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="19dp" />-->
+
+
+    <android.support.v7.widget.CardView
+
+        android:focusable="false"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CardViewStyle"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPaddingLeft="16dp"
+        card_view:contentPaddingRight="16dp"
+        card_view:contentPaddingBottom="16dp"
+        card_view:cardBackgroundColor="#F5F5F5"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="3dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/group" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Group Name"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#1B5E20" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Member Name"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/person" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#1B5E20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewGroupName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="start"
+                    android:lines="1"
+                    android:paddingTop="5dp"
+                    android:text="Group Name"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/textViewMemberName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="end"
+                    android:paddingTop="5dp"
+                    android:text="Member Name"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:focusable="false"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CardViewStyle"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPaddingLeft="16dp"
+        card_view:contentPaddingRight="16dp"
+        card_view:contentPaddingBottom="16dp"
+        card_view:cardBackgroundColor="#F5F5F5"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="3dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+                <TextView
+                    android:text="Opening Date"
+                    android:layout_width="0dp"
+                    android:fontFamily="serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"/>
+                <TextView
+                    android:text=":"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"/>
+
+                <TextView
+                    android:id="@+id/textViewOpeningDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+                <TextView
+                    android:text="Duration"
+                    android:layout_width="0dp"
+                    android:fontFamily="serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"/>
+                <TextView
+                    android:text=":"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"/>
+                <TextView
+                    android:id="@+id/textViewDuration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+                <TextView
+                    android:text="Installment Type"
+                    android:layout_width="0dp"
+                    android:fontFamily="serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"/>
+                <TextView
+                    android:text=":"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"/>
+                <TextView
+                    android:id="@+id/textViewInstallmentType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+                <TextView
+                    android:text="Meeting Day"
+                    android:layout_width="0dp"
+                    android:fontFamily="serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"/>
+                <TextView
+                    android:text=":"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"/>
+
+                <TextView
+                    android:id="@+id/textViewMeetingDay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+                <TextView
+                    android:text="Meeting Date"
+                    android:layout_width="0dp"
+                    android:fontFamily="serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"/>
+                <TextView
+                    android:text=":"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"/>
+
+                <TextView
+                    android:id="@+id/textViewMeetingDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+                <TextView
+                    android:text="Balance"
+                    android:layout_width="0dp"
+                    android:fontFamily="serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"/>
+                <TextView
+                    android:text=":"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"/>
+                <TextView
+                    android:id="@+id/textViewBalance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:fontFamily="serif"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:fontFamily="serif"
+                    android:text="Minimum Deposit"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:fontFamily="serif"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textViewMinimumDeposit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayoutLastPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:fontFamily="serif"
+                    android:text="Last Payment Date (Branch)"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:fontFamily="serif"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textViewLastPaymentDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>

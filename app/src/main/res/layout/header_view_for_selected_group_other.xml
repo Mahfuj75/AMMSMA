@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBlueGray" />
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Group Name"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Loan Realizable Total"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Primary Loan"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Secondary Loan"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+
+
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Supplementary Loan"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Savings Deposit"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Savings Withdraw"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="CBS Deposit"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="CBS Withdraw"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="LTS Deposit"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Bad-Debt Collection"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Exemption Amount"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+        <TextView
+            android:background="#B3E5FC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Net Collection"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueGray" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBlueGray" />
+
+</LinearLayout>

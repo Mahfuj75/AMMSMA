@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="asa.org.bd.ammsma">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="replace" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:node="replace" />
+
+    <!-- <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" /> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:screenOrientation="landscape"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateHidden|adjustResize">
+        <activity
+            android:name=".activity.LoginAmmsActivity"
+            android:label="@string/title_activity_login_amms"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.asa.org.bd"
+                    android:pathPattern="/android"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".splashScreen.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.insideLogin.HomeActivity"
+            android:icon="@drawable/app_icon"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".file.FilePicker"
+            android:label="@string/title_select_database_file"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.MiscellaneousActivity"
+            android:label="@string/title_activity_miscellaneous"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.insideGroupOperation.AddNewMemberActivity"
+            android:label="@string/title_activity_add_new_member"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.insideGroupOperation.LoanDisburseActivity"
+            android:label="@string/title_activity_loan_disburse"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.insideGroupOperation.LongTermSavingsActivity"
+            android:label="@string/title_activity_long_term_sevings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.insideGroupOperation.GroupCollectionActivity"
+            android:label="@string/title_activity_group_collection"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.GroupOperationActivity"
+            android:label="@string/title_activity_group_operation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.insideGroupOperation.insideGroupCollection.DailyCollectionDynamicActivity"
+            android:label="@string/title_activity_daily_collection_dynamic"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.RealizedInformationActivity"
+            android:label="@string/title_activity_realized_information"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.insideGroupOperation.insideGroupCollection.BadDebtActivity"
+            android:label="@string/title_activity_bad_debt"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.MemberBalanceActivity"
+            android:label="@string/title_activity_member_balance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.insideGroupOperation.MemberInformationActivity"
+            android:label="@string/title_activity_member_information"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.insideGroupOperation.PrimarySecondaryLoanActivity"
+            android:label="@string/title_activity_primary_secondary_loan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.MemberSearchActivity"
+            android:label="@string/title_activity_member_search"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.ImportDataNewActivity"
+            android:label="@string/title_activity_import_data_new"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.insideGroupOperation.NewCbsAccountActivity"
+            android:label="@string/title_activity_cbs_and_saving"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.insideLogin.insideHome.insideGroupOperation.NewSavingAccountActivity"
+            android:label="@string/title_activity_new_saving_account"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".service.LogoutTimerService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":LogoutTimerService" />
+
+        <activity
+            android:name=".activity.insideLogin.insideHome.OverdueMemberActivity"
+            android:label="@string/title_activity_overdue_member"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,30 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="textSizeOne">13sp</dimen>
+    <dimen name="textSizeTwo">14sp</dimen>
+    <dimen name="textSizeThree">16sp</dimen>
+
+
+    <dimen name="splashHeight">350dp</dimen>
+    <dimen name="splashWidth">350dp</dimen>
+
+
+    <dimen name="cell_height">40dp</dimen>
+    <dimen name="row_header_width">190dp</dimen>
+    <dimen name="text_size">13sp</dimen>
+
+    <!-- Material Design TableView dimensions -->
+    <dimen name="md_cell_height">40dp</dimen>
+    <dimen name="md_cell_text_size">13sp</dimen>
+    <dimen name="md_column_header_text_size">13sp</dimen>
+    <dimen name="md_column_header_gap_size">28dp</dimen>
+
+
+    <!-- Overriding the default values of the tableView -->
+    <dimen name="default_row_header_width">190dp</dimen>
+    <dimen name="default_column_header_height">40dp</dimen>
+
+
+</resources>

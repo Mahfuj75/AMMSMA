@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="asa.org.bd.ammsma.activity.insideLogin.insideHome.insideGroupOperation.insideGroupCollection.BadDebtActivity"
+    tools:showIn="@layout/activity_bad_debt">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/loan_officer" />
+
+        <TextView
+            android:paddingTop="4dp"
+            android:id="@+id/textView_programOfficerName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:gravity="start"
+            android:lines="1"
+            android:text="Name"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:paddingTop="4dp"
+            android:id="@+id/textView_groupName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:gravity="end"
+            android:lines="1"
+            android:text="Group Name"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/group" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:id="@+id/imageButtonLeft"
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/left_arrow"
+                    android:theme="@style/ImageButtonStyle"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".6"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginStart="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/person" />
+
+
+                    <Spinner
+                        android:id="@+id/spinner_members"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/colorSimpleBlack"
+                        android:textSize="12sp"
+                        android:fontFamily="serif"
+                        android:popupBackground="@android:color/transparent"
+                        android:layout_marginEnd="5dp"
+                        />
+
+                </LinearLayout>
+
+                <ImageButton
+
+                    android:id="@+id/imageButtonRight"
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/right_arrow"
+                    android:theme="@style/ImageButtonStyle"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingBottom="10dp"
+                    android:text="Net Amount"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/textView_net_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/round_corner"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="19sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".9"
+                android:orientation="vertical"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/buttonMemberDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="14dp"
+                    android:text="Account Details "
+                    android:textAllCaps="false"
+                    android:textSize="17sp"
+                    android:theme="@style/ButtonStyle" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/buttonSave"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif"
+                        android:lines="1"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="14dp"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textSize="17sp"
+                        android:theme="@style/ButtonStyle" />
+
+                    <Button
+                        android:id="@+id/buttonClose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif"
+                        android:lines="1"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="14dp"
+                        android:text="Close"
+                        android:textAllCaps="false"
+                        android:textSize="17sp"
+                        android:theme="@style/ButtonStyle" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_corner_for_layout"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="serif"
+                            android:text="Account Status"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <asa.org.bd.ammsma.customListView.CustomNonScrollerListView
+                            android:id="@+id/badDebtAccountListView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_corner_for_layout"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="serif"
+                            android:text="Bad Debt Collection"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <asa.org.bd.ammsma.customListView.CustomNonScrollerListView
+                            android:id="@+id/badDebtCollectionListView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+                <!---->
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

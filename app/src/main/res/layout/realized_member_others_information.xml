@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="25dp">
+
+    <TextView
+        android:id="@+id/textViewGroupName"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="center"
+        android:textColor="@color/colorSimpleBlack"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+    <TextView
+        android:id="@+id/textViewRealizableTotal"
+        android:layout_width="125dp"
+        android:layout_height="match_parent"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="serif"
+        android:textColor="#1b245e"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+    <TextView
+        android:id="@+id/textViewPrimary"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="serif"
+        android:textColor="#B71C1C"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+    <TextView
+        android:id="@+id/textViewSecondary"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="serif"
+        android:textColor="#311B92"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+    <TextView
+        android:id="@+id/textViewSupplementary"
+        android:layout_width="115dp"
+        android:layout_height="match_parent"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="serif"
+        android:textColor="#1B5E20"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+    <TextView
+        android:id="@+id/textViewSavingsDepositWithoutLts"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="serif"
+        android:textColor="#F57F17"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+    <TextView
+        android:id="@+id/textViewSavingsWithdrawal"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="serif"
+        android:textColor="#3E2723"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+    <TextView
+        android:id="@+id/textViewCbsDeposit"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="serif"
+        android:textColor="#827717"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+    <TextView
+        android:id="@+id/textViewCbsWithdrawal"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="serif"
+        android:textColor="#006064"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+    <TextView
+        android:id="@+id/textViewLtsDeposit"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="serif"
+        android:textColor="#4A148C"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+    <TextView
+        android:id="@+id/textViewBadDebtCollection"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="serif"
+        android:textColor="#B71C1C"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+    <TextView
+        android:id="@+id/textViewExemptionAmount"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="serif"
+        android:textColor="#304FFE"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+    <TextView
+        android:id="@+id/textViewNetCollection"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="serif"
+        android:textColor="@color/colorSimpleBlack"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+</LinearLayout>

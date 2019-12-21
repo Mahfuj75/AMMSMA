@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/CardViewStyle"
+    android:id="@+id/cardViewMemberInfo"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPaddingLeft="16dp"
+    card_view:contentPaddingRight="16dp"
+    card_view:contentPaddingBottom="16dp"
+    card_view:cardBackgroundColor="#F5F5F5"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="3dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:descendantFocusability="blocksDescendants"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:fontFamily="serif"
+                    android:text="Loan Name"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+                <TextView
+                    android:id="@+id/textViewLoanName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Opening Date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+                <TextView
+                    android:id="@+id/textViewOpeningDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:fontFamily="serif"
+                    android:text="Disburse Amount"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+                <TextView
+                    android:id="@+id/textViewDisburseAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:fontFamily="serif"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:fontFamily="serif"
+                    android:text="Service Charge"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+                <TextView
+                    android:id="@+id/textViewServiceCharge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:fontFamily="serif"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:fontFamily="serif"
+                    android:text="Outstanding Amount"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+                <TextView
+                    android:id="@+id/textViewOutstandingAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:fontFamily="serif"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:fontFamily="serif"
+                    android:text="Installment Amount"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+                <TextView
+                    android:id="@+id/textViewInstallmentAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Button
+            android:visibility="visible"
+            android:id="@+id/buttonLtsDelete"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:fontFamily="serif"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textColor="#B71C1C"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

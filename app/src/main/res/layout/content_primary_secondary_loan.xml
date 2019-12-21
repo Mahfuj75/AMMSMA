@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="asa.org.bd.ammsma.activity.insideLogin.insideHome.insideGroupOperation.PrimarySecondaryLoanActivity"
+    tools:showIn="@layout/activity_primary_secondary_loan">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/loan_officer" />
+        <TextView
+            android:paddingTop="4dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:id="@+id/textView_programOfficerName"
+            android:textSize="15sp"
+            android:lines="1"
+            android:layout_marginStart="10dp"
+            android:fontFamily="serif"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Name"
+            android:textColor="@color/colorPrimaryDark"/>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:paddingTop="4dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:id="@+id/textViewGroupName"
+            android:textSize="15sp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="serif"
+            android:lines="1"
+            android:gravity="end"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Group Name"
+            android:textColor="@color/colorPrimaryDark" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/group" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="7dp">
+
+
+
+        <Spinner
+            android:id="@+id/spinnerGroup"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="12sp"
+            android:fontFamily="serif"
+            android:popupBackground="@android:color/transparent"
+            android:layout_marginEnd="5dp"
+            android:paddingEnd="5dp"
+            />
+        <Spinner
+            android:id="@+id/spinnerMembers"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/colorSimpleBlack"
+            android:textSize="12sp"
+            android:fontFamily="serif"
+            android:popupBackground="@android:color/transparent"
+            android:layout_marginEnd="5dp"
+            android:paddingStart="5dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="7dp">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/buttonCreateLoan"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="20dp"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="Add Loan"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height=".8dp"/>
+
+
+    <ScrollView
+        android:id="@+id/scrollViewPrimarySecondaryLoan"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <asa.org.bd.ammsma.customListView.CustomNonScrollerListView
+                android:id="@+id/listViewLoanAccounts"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dip"
+                >
+
+            </asa.org.bd.ammsma.customListView.CustomNonScrollerListView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

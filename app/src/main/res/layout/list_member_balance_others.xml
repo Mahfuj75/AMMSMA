@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="25dp">
+
+    <TextView
+        android:id="@+id/textViewPrimaryDisbursedDate"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/colorSimpleBlack"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+
+
+    <TextView
+        android:id="@+id/textViewPrimaryDisbursed"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="end"
+        android:lines="1"
+        android:textColor="#311B92"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:paddingEnd="3dp"
+        android:paddingStart="3dp"
+        android:layout_marginBottom="5dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+
+    <TextView
+        android:id="@+id/textViewPrimaryInstallmentNumber"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="end"
+        android:lines="1"
+        android:textColor="#311B92"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:paddingEnd="3dp"
+        android:paddingStart="3dp"
+        android:layout_marginBottom="5dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+    <TextView
+        android:id="@+id/textViewPrimaryOverDue"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="end"
+        android:lines="1"
+        android:textColor="@color/colorSimpleBlack"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+    <TextView
+        android:id="@+id/textViewSecondaryDisbursed"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="end"
+        android:lines="1"
+        android:textColor="#BF360C"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+    <TextView
+        android:id="@+id/textViewSecondaryOverdue"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="end"
+        android:lines="1"
+        android:textColor="#006064"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+    <TextView
+        android:id="@+id/textViewSecondaryOutstanding"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="end"
+        android:lines="1"
+        android:textColor="#1B5E20"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+    <TextView
+        android:id="@+id/textViewPrimaryOutstanding"
+        android:layout_width="95dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="end"
+        android:lines="1"
+        android:textColor="#263238"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+    <TextView
+        android:id="@+id/textViewSavingBalance"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="end"
+        android:lines="1"
+        android:textColor="#4A148C"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+
+    <TextView
+        android:id="@+id/textViewLtsBalance"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="end"
+        android:lines="1"
+        android:textColor="#263238"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+    <TextView
+        android:id="@+id/textViewCbsBalance"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="end"
+        android:lines="1"
+        android:textColor="#B71C1C"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueGray" />
+    <TextView
+        android:id="@+id/textViewNetBalance"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="end"
+        android:lines="1"
+        android:textColor="@color/colorSimpleBlack"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"/>
+
+
+</LinearLayout>

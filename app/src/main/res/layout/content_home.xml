@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:context=".activity.insideLogin.HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/loan_officer" />
+
+        <TextView
+            android:textAllCaps="false"
+            android:id="@+id/textView_programOfficerName"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/spinner_border"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <Spinner
+            android:overlapAnchor="false"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="-28dp"
+            android:layout_weight="1"
+            android:id="@+id/spinnerGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
+
+        <ImageView
+            android:id="@+id/spinnerGroupImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start|center"
+            android:src="@mipmap/drop" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridViewHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth">
+    </GridView>
+
+</LinearLayout>

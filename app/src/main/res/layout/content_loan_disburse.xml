@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.insideLogin.insideHome.insideGroupOperation.LoanDisburseActivity"
+    tools:showIn="@layout/activity_loan_disburse"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/loan_officer" />
+        <TextView
+            android:paddingTop="4dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:id="@+id/textView_programOfficerName"
+            android:textSize="15sp"
+            android:lines="1"
+            android:layout_marginStart="10dp"
+            android:fontFamily="serif"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimaryDark"/>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:paddingTop="4dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:id="@+id/textViewGroupName"
+            android:textSize="15sp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="serif"
+            android:lines="1"
+            android:gravity="end"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimaryDark" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/group" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageViewMaleOrFemale"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/male"/>
+            <TextView
+                android:paddingTop="4dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:id="@+id/txtViewMemberName"
+                android:textSize="15sp"
+                android:lines="1"
+                android:layout_marginStart="10dp"
+                android:fontFamily="serif"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".5">
+
+            <Button
+                android:id="@+id/buttonDisburse"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="serif"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Disburse"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutLoanSaved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Loan added"
+                    android:gravity="end"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textSize="@dimen/textSizeOne"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/colorSimpleBlack"/>
+                <ImageView
+                    android:src="@drawable/check_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="serif"
+                    android:text="Disburse Date"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight=".1"
+                    android:fontFamily="serif"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewLoanDisbursedDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:textColor="@color/colorGray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewProgramName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Program Name"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerProgramName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:popupBackground="@android:color/transparent"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Duration"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerDuration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:popupBackground="@android:color/transparent"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Installment Type"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerInstallmentType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:popupBackground="@android:color/transparent"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Grace Period"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerGracePeriod"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:popupBackground="@android:color/transparent"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="serif"
+                    android:text="First Installment Date"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight=".1"
+                    android:fontFamily="serif"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewFirstInstallmentDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:textColor="@color/colorGray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5sp"
+                android:background="@drawable/round_corner_for_layout"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textViewFundType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Fund Type"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"/>
+                <Spinner
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:id="@+id/spinnerFundType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@android:color/transparent"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5sp"
+                android:background="@drawable/round_corner_for_layout"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textViewSchemeType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:text="Scheme Type"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"/>
+                <Spinner
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:id="@+id/spinnerScheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@android:color/transparent"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="serif"
+                    android:text="Principal Amount"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:fontFamily="serif"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editTextPrincipalAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:inputType="number"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp"
+                    android:maxLength="8"
+                    android:digits="0123456789"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".6"
+                    android:fontFamily="serif"
+                    android:text="Service Charge"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".1"
+                    android:fontFamily="serif"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewServiceCharge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner_for_layout_for_member"
+                    android:fontFamily="serif"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorGrayText"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".6"
+                    android:fontFamily="serif"
+                    android:text="Total Disburse Amount"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".1"
+                    android:fontFamily="serif"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewTotalDisburse"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner_for_layout_for_member"
+                    android:fontFamily="serif"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorGrayText"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".6"
+                    android:fontFamily="serif"
+                    android:text="loan security and risk fund"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".1"
+                    android:fontFamily="serif"
+                    android:text=":"
+                    android:textColor="@color/colorSimpleBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewLoanInsurance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner_for_layout_for_member"
+                    android:fontFamily="serif"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorGrayText"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight=".8"
+                    android:fontFamily="serif"
+                    android:text="Service charge rate (Declining)   "
+                    android:textColor="@color/colorOffGreen"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewServiceChargeRate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorOffGreen"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <asa.org.bd.ammsma.customListView.CustomNonScrollerListView
+                        android:id="@+id/listViewScheduleDates"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

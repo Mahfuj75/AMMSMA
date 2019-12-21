@@ -1,0 +1,119 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:logo">@drawable/app_logo_icon</item>
+        <item name="actionMenuTextAppearance">@style/ActionBar.Menu</item>
+        <item name="android:itemTextAppearance">@style/ActionBar.Menu.Item</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextAppearance.AppCompat.Large" parent="Base.TextAppearance.AppCompat.Large" />
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#004D40</item>
+        <item name="colorControlHighlight">#009688</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="ButtonStyle2" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#B71C1C</item>
+        <item name="colorControlHighlight">#C62828</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="ImageButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#C8E6C9</item>
+        <item name="colorControlHighlight">#E8F5E9</item>
+    </style>
+
+
+    <style name="CardViewStyle" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPaddingBottom">24dp</item>
+        <item name="contentPaddingTop">24dp</item>
+        <item name="contentPaddingLeft">16dp</item>
+        <item name="contentPaddingRight">16dp</item>
+        <item name="cardBackgroundColor">#FFFFFF</item>
+    </style>
+
+    <style name="CardViewStyle2" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">3dp</item>
+        <item name="cardBackgroundColor">#FFFFFF</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+    <style name="ActionBar.Menu.Item" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+
+    <style name="ActionBar.Menu.Item.AlwaysShow" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="ActionBar.Menu" parent="ActionBar.Menu" tools:ignore="ResourceCycle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">4.0dip</item>
+
+    </style>
+
+
+    <style name="Hyperlink">
+        <item name="android:textColor">@color/colorSimpleBlack</item>
+        <item name="android:background">@drawable/hyperlink_underline</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+
+    </style>
+
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">#000000
+        </item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">#000000
+        </item> <!-- activated color change as you wish -->
+        <item name="android:textColor">#212121</item> <!-- checkbox text color -->
+    </style>
+
+
+</resources>

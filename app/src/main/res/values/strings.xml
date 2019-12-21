@@ -1,0 +1,349 @@
+<resources>
+    <string name="app_name">AMMSMA (1.5.2)</string>
+    <string name="version_control">1.5.2</string>
+    <string name="version_value">1.5</string>
+    <string name="database_version">4</string>
+    <string name="title_activity_login_amms">Sign in</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_user_id">User ID</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="action_reset">Reset</string>
+    <string name="error_field_required">This field is required</string>
+
+
+    <string name="fontFamilyOne">serif</string>
+
+
+    <string name="title_activity_home">Home</string>
+    <string name="title_select_database_file">Select Database File</string>
+    <!--<string name="key_unzip">U$ueZdYJR9BMKLdYD?G96Qdd$=#</string>-->
+    <string name="key_encrypted_password">VYH3rPJDAqk/FQp4kjBZF7/5Fei5+ms+WKxMO6hME6A=</string>
+    <string name="key">=s4z=XSBqnS4-Nrp*6X_Vj#3WbH</string>
+    <string name="encryption_decryption_key_online">asdfghjklpoiuytr</string>
+    <string name="encryption_decryption_iv_online">rtyuioplkjhgfdsa</string>
+    <string name="time_pattern_online">kkmm</string>
+    <string name="day_pattern_online">yyyyMMddkkmm</string>
+
+
+    <!-- Strings related to login -->
+    <string name="title_activity_add_new_member">Member Admission</string>
+    <string name="title_activity_miscellaneous">Miscellaneous</string>
+    <string name="title_activity_loan_disburse">Loan Disburse</string>
+    <string name="title_activity_long_term_sevings">Add LTS Account</string>
+
+
+    <string name="merging_warning">AMMS Branch Data is being imported. This operation would take a few minutes to complete. Please sit back and wait a while for the Login screen to appear.</string>
+    <string name="processing_warning">AMMS Branch Data is being processed. This operation would take a few minutes to complete. Please sit back and wait a while.</string>
+    <string name="merging_failed_warning">Failed to import data. Import process was interrupted due to corrupt/problematic data file or data. Please contact branch ASE or ASA support team for solution.</string>
+    <string name="merging_failed_warning_data_marge_problem">Wrong file selected for Import. Please select the correct AMMS branch exported data file from AMMS version 7.4 or above.</string>
+    <string name="previous_data_remove_warning">Existing data will be deleted by this operation. Are you sure you want to import new AMMS branch data?</string>
+    <string name="user_admin">User: Admin</string>
+    <string name="capital_buildup">Capital Buildup</string>
+
+    <string-array name="home_grid_name">
+        <item>Group Operation</item>
+        <item>Member Balance</item>
+        <item>Realized Information</item>
+        <item>Search Member</item>
+        <item>Import Data</item>
+        <item>Overdue Members</item>
+        <item>Export Data</item>
+    </string-array>
+
+    <string-array name="miscellaneous_grid_name">
+        <item>Loan Disburse</item>
+        <item>Open LTS Account</item>
+        <item>Search Member</item>
+        <item>Member Balance</item>
+    </string-array>
+
+    <string-array name="group_operation_grid_name">
+        <item>Member Transaction</item>
+        <item>Member Information</item>
+        <item>Member Balance</item>
+        <item>Member Admission</item>
+        <item>Add LTS Account</item>
+        <item>Loan Disburse</item>
+        <item>Add CBS Account</item>
+        <item>Add Savings Account</item>
+    </string-array>
+
+
+    <string-array name="default_programs_name">
+        <item>Primary Loan</item>
+        <item>Special Loan</item>
+        <item>Sanitation Entrepreneur Loan</item>
+        <item>SMAP Loan</item>
+        <item>Crossbreed Milking Cow Loan</item>
+    </string-array>
+
+    <string-array name="default_programs_name_msme">
+        <item>Primary Loan</item>
+        <item>Special Loan</item>
+        <item>Sanitation Entrepreneur Loan</item>
+        <item>SMAP Loan</item>
+        <item>Crossbreed Milking Cow Loan</item>
+        <item>Micro Entrepreneur Loan</item>
+        <item>Small Entrepreneur Loan</item>
+        <item>Medium Entrepreneur Loan</item>
+        <item>MSME Short Term Loan</item>
+    </string-array>
+
+    <string-array name="member_sex">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Female Widow</item>
+        <item>Female Without Guarantor</item>
+    </string-array>
+
+    <string-array name="marital_status">
+        <item>Married</item>
+        <item>Unmarried</item>
+        <item>Divorced</item>
+        <item>Not Set</item>
+        <item>Abandoned</item>
+        <item>Widow</item>
+    </string-array>
+
+
+    <string-array name="member_religion">
+        <item>Islam</item>
+        <item>Christianity</item>
+        <item>Buddhism</item>
+        <item>Hinduism</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="member_nationality">
+        <item>Bangladeshi</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="member_Ethnicity">
+        <item>Non Tribal</item>
+        <item>Tribal</item>
+    </string-array>
+
+
+    <string-array name="member_status">
+        <item>Active</item>
+    </string-array>
+
+
+    <string-array name="member_district">
+        <item>Barguna</item>
+        <item>Inactive</item>
+    </string-array>
+
+
+    <string-array name="lts_Duration">
+        <item>5 Years</item>
+        <item>10 Years</item>
+    </string-array>
+    <string-array name="cbs_Duration">
+        <item>8 Years</item>
+    </string-array>
+    <string-array name="saving_Duration">
+        <item>0 Years</item>
+    </string-array>
+    <string-array name="installment_type_general">
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="installment_type_msme">
+        <item>Monthly</item>
+    </string-array>
+    <string-array name="new_account_days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Saturday</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="new_account_date">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+
+    </string-array>
+
+    <string-array name="district_name">
+        <item>Bagerhat</item>
+        <item>Bandarban</item>
+        <item>Barguna</item>
+        <item>Barishal</item>
+        <item>Bhola</item>
+        <item>Bogra</item>
+        <item>Brahmanbaria</item>
+        <item>Chandpur</item>
+        <item>Chapai Nawabganj</item>
+        <item>Chittagong</item>
+        <item>Chuadanga</item>
+        <item>Comilla</item>
+        <item>Cox\'s Bazar</item>
+        <item>Dhaka</item>
+        <item>Other</item>
+        <item>Dinajpur</item>
+        <item>Faridpur</item>
+        <item>Feni</item>
+        <item>Gaibandha</item>
+        <item>Gazipur</item>
+        <item>Gopalganj</item>
+        <item>Habiganj</item>
+        <item>Jamalpur</item>
+        <item>Jessore</item>
+        <item>Jhalakati</item>
+        <item>Jhenaidaha</item>
+        <item>Joypurhat</item>
+        <item>Khagrachhari</item>
+        <item>Khulna</item>
+        <item>Kishoreganj</item>
+        <item>Kurigram</item>
+        <item>Kushtia</item>
+        <item>Lakshmipur</item>
+        <item>Lalmonirhat</item>
+        <item>Madaripur</item>
+        <item>Magura</item>
+        <item>Manikganj</item>
+        <item>Meherpur</item>
+        <item>Moulavibazar</item>
+        <item>Munshiganj</item>
+        <item>Mymensingh</item>
+        <item>Naogaon</item>
+        <item>Narail</item>
+        <item>Narayangonj</item>
+        <item>Narsingdi</item>
+        <item>Natore</item>
+        <item>Netrakona</item>
+        <item>Nilphamari</item>
+        <item>Noakhali</item>
+        <item>Pabna</item>
+        <item>Panchagarh</item>
+        <item>Patuakhali</item>
+        <item>Pirojpur</item>
+        <item>Rajbari</item>
+        <item>Rajshahi</item>
+        <item>Rangamati</item>
+        <item>Rangpur</item>
+        <item>Satkhira</item>
+        <item>Shariatpur</item>
+        <item>Sherpur</item>
+        <item>Sirajganj</item>
+        <item>Sunamganj</item>
+        <item>Sylhet</item>
+        <item>Tangail</item>
+        <item>Thakurgaon</item>
+    </string-array>
+
+    <string name="please_login_upper_text">Please Login to AMMS Mobile Application</string>
+    <string name="time_zone">GMT+6</string>
+    <string name="special_char">/[^a–zA–Z0-9]/g</string>
+
+
+    <string name="title_activity_group_collection">Member Transaction</string>
+    <string name="title_activity_group_operation">Group Operation</string>
+    <string name="title_activity_daily_collection">Daily Collection</string>
+    <string name="title_activity_daily_collection_dynamic">Daily Collection</string>
+    <string name="title_activity_realized_information">Realized Info</string>
+    <string name="title_activity_bad_debt">Bad-Debt Collection</string>
+    <string name="title_activity_member_balance">Member Balance</string>
+    <string name="title_activity_member_information">Member Info</string>
+    <string name="title_activity_primary_secondary_loan">Member\'s Loan</string>
+    <string name="name">Name</string>
+    <string name="title_activity_member_search">Search Member</string>
+    <string name="title_activity_import_data_new">Import Data</string>
+    <string name="title_activity_cbs_and_saving">Add CBS Account</string>
+    <string name="title_activity_new_saving_account">Add Savings Account</string>
+    <string name="title_activity_test">TestActivity</string>
+
+
+    <string name="SharePreferencesName">Mr.K</string>
+    <string name="FirstInstallation">First_Installation</string>
+    <string name="ImportDate">Import_Date</string>
+    <string name="ImportSuccessTag">Import_Success_Tag</string>
+    <string name="ImportFileName">Import_File_Name</string>
+    <string name="ExportDate">Export_Date</string>
+    <string name="ExportSuccessTag">Export_Success_Tag</string>
+    <string name="ExportFileName">Export_File_Name</string>
+    <string name="ImportCounter">Import_Counter</string>
+    <string name="ExportCounter">Export_Counter</string>
+    <string name="day_Close">Close Current Day</string>
+    <string name="log_out">Log Out</string>
+    <string name="no_member_selected">No Member Selected</string>
+    <string name="lts_permission">This member does not have the permission to add new LTS Account</string>
+    <string name="cbs_permission">This member does not have the permission to add new CBS Account</string>
+    <string name="processing_data">Processing Data</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sort_ascending">Sort Ascending</string>
+    <string name="sort_descending">Sort Descending</string>
+    <string name="clear_sorting">Clear</string>
+    <string name="hiding_row_sample">Hiding 3. Row Sample</string>
+    <string name="showing_row_sample">Showing 3. Row Sample</string>
+    <string name="scroll_to_column_position">Scroll to 15. column position</string>
+    <string name="scroll_to_row_position">Scroll to 5. row position</string>
+    <string name="show_hide_the_column">Showing / Hiding 1. column</string>
+    <string name="table_pagination_details">Page %s, showing items %s - %s.</string>
+    <string-array name="moods">
+        <item>Happy</item>
+        <item>Sad</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="items_per_page">
+        <item>10</item>
+        <item>20</item>
+        <item>25</item>
+        <item>50</item>
+        <item>All</item>
+    </string-array>
+    <string name="title_activity_overdue_member">Overdue Members</string>
+    <string name="no_group_selected">No Group Selected</string>
+    <string name="no_overdue_member_found">No Overdue-Member found</string>
+    <string name="otp_for_online">OTP</string>
+    <string name="special">[^a-km-np-zA-KM-NP-Z1-9]</string>
+    <string name="time_zone_problem">Device Time-Zone Problem</string>
+    <string name="error">Error</string>
+    <string name="ok">Ok</string>
+    <string name="actual_timezone">GMT+06:00</string>
+
+
+</resources>

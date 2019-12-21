@@ -1,0 +1,81 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.insideLogin.insideHome.ImportDataNewActivity"
+    tools:showIn="@layout/activity_import_data_new"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textViewSelectedFile"
+        android:paddingTop="30dp"
+        android:text="No file selected"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:textColor="@color/colorGray"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonBrowse"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:fontFamily="serif"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Browse"
+            android:theme="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/buttonImport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="Import Data"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:theme="@style/ButtonStyle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewImportDataError"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="serif"
+        android:textSize="17sp"
+        android:textColor="#B40404"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:id="@+id/textViewFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:background="#086A87"
+        android:textSize="17sp"
+        android:padding="5dp"/>
+
+</LinearLayout>

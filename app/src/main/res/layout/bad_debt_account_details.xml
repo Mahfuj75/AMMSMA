@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutPrimaryLoan"
+        android:visibility="visible"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:lines="1"
+                android:text="Program Name"
+                android:textColor="@color/colorSimpleBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:text=":"
+                android:fontFamily="serif"
+                android:textColor="@color/colorSimpleBlack"
+                android:textSize="14sp"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/textViewProgramName"
+                android:fontFamily="serif"
+                android:textColor="@color/colorSimpleBlack"
+                android:textSize="14sp"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <View
+
+            android:layout_width="match_parent"
+            android:background="#3c37374f"
+            android:layout_height="1px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:lines="1"
+                android:text="Bad-Debt Amount"
+                android:textColor="@color/colorSimpleBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:text=":"
+                android:fontFamily="serif"
+                android:textColor="@color/colorSimpleBlack"
+                android:textSize="14sp"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/textViewBadDebtAmount"
+                android:fontFamily="serif"
+                android:textColor="@color/colorSimpleBlack"
+                android:textSize="14sp"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:background="#3c37374f"
+            android:layout_height="1px"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Opening Date"
+                android:textStyle="bold"
+                android:textColor="@color/colorSimpleBlack"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView
+                android:textStyle="bold"
+                android:text=":"
+                android:fontFamily="serif"
+                android:textColor="@color/colorSimpleBlack"
+                android:textSize="14sp"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"/>
+            <TextView
+                android:id="@+id/textViewOpeningDate"
+                android:fontFamily="serif"
+                android:textColor="@color/colorSimpleBlack"
+                android:textSize="14sp"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

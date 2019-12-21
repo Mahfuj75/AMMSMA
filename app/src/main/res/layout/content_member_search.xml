@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="asa.org.bd.ammsma.activity.insideLogin.insideHome.MemberSearchActivity"
+    tools:showIn="@layout/activity_member_search">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/loan_officer" />
+
+        <TextView
+            android:textAllCaps="false"
+            android:id="@+id/textView_programOfficerName"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CardViewStyle"
+        android:id="@+id/cardViewMemberInfo"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPaddingLeft="16dp"
+        card_view:contentPaddingRight="16dp"
+        card_view:contentPaddingBottom="16dp"
+        card_view:cardBackgroundColor="#E8F5E9"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/textInputEditTextGroupName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:inputType="textCapWords"
+                        android:fontFamily="serif"
+                        android:hint="Group Name"
+                        android:textColor="@color/textColorForEditTextOne"
+                        android:textSize="@dimen/textSizeTwo" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/textInputEditTextMemberName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:inputType="textPersonName"
+                        android:fontFamily="serif"
+                        android:hint="Member Name"
+                        android:textColor="@color/textColorForEditTextOne"
+                        android:textSize="@dimen/textSizeTwo" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/textInputEditTextFatherOrHusband"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:inputType="textPersonName"
+                        android:fontFamily="serif"
+                        android:hint="Father / Husband"
+                        android:textColor="@color/textColorForEditTextOne"
+                        android:textSize="@dimen/textSizeTwo" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/textInputEditTextNationalIdNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:fontFamily="serif"
+                        android:lines="1"
+                        android:digits="0123456789"
+                        android:hint="National Id"
+                        android:textColor="@color/textColorForEditTextOne"
+                        android:textSize="@dimen/textSizeTwo" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    <Button
+        android:id="@+id/buttonRefresh"
+        android:text="Refresh"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="serif"
+        android:drawableStart="@drawable/ic_refresh_black_24dp"
+        android:textAllCaps="false"
+        android:layout_gravity="end"
+        android:textSize="15sp"
+        style="@style/ButtonStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollview"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/member_search__list_view_title" />
+            <ListView
+
+                android:id="@+id/listViewSearchMember"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            </ListView>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/textViewInsetSearchData"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Insert Search Data "
+
+        android:layout_height="match_parent" />
+
+
+
+
+
+
+</LinearLayout>
